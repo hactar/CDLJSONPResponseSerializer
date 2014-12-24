@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.9'
   s.public_header_files = 'CDLJSONPResponseSerializer/*.h'
   s.source_files = 'CDLJSONPResponseSerializer/CDLJSONPResponseSerializer.{h,m}'
-  s.dependency 'AFNetworking', '~> 2.0.0'
+  s.dependency 'AFNetworking'
   s.frameworks = 'JavaScriptCore'
 end
