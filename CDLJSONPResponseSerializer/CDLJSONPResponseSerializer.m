@@ -64,7 +64,7 @@ NSString * const CDLJSONPResponseSerializerErrorDomain =
   }
   __block id json = nil;
   NSString *script =
-    [[NSString alloc] initWithData:data encoding:self.stringEncoding];
+    [[NSString alloc] initWithData:data encoding: NSUTF8StringEncoding];
   if (script) {
     JSContext *context = [[JSContext alloc] init];
     NSString *callback = [self.callback copy];
